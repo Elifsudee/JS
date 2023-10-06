@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+
+    <script>
+     
+      
+//onemli: 0.flase,null,undefined "" ve NaN disindaki tum durumlar True kabul edlilir
+// || veya =true arar bulamazsa en son islemi dondurur
+// && ve = false arar bulamzsa en son degeri dondurur
+
+let x=false;
+let y=true;
+let z=true;
+let m=false;
+
+
+const compration1 =true && null;
+console.log(compration1);
+
+const comparation2= y&&z&&5;//false arar bulamadi enson degeri dondurdu
+console.log(comparation2);
+
+const comparation3= y&& m&& z&&5;//false buldu dondurdu
+console.log(comparation3);
+
+
+const comparation4= z||34 ;//true buldu dondurdu
+console.log(comparation4);
+
+
+const comparation5= m|| x|| false ||34 ;//true arar bulamazsa en son degeri dondurur
+console.log(comparation5);
+        </script>
+</body>
+</html>
