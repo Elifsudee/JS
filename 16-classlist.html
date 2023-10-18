@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color:  blue;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-style{
+    color: green;
+    text-shadow: 3px 3px 5 px black;
+}
+
+    </style>
+</head>
+<body>
+  
+    <h1> Hello Word</h1>
+    <p id="pEl"  class="red text-center">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod facilis blanditiis corrupti quis aut quam cumque quo delectus, laudantium consectetur. Saepe, <b>dignissimos</b> deleniti? Sapiente temporibus excepturi earum, voluptatem aperiam quis.
+    </p>
+
+ 
+
+    <script>
+        //classlist ile
+   //Bir elementin sabip oldugu classlari alabiliyoruz istedigimiz elemani alabiliyoruz
+   //Bir elementin sabip oldugu classlari manipule etmek icin kullanilir
+   //add elemente classa eklemek icin
+   // remove elementin sabip oldugu classi kaldirmak icin kullanilir
+
+
+
+   let pEl=document.querySelector("#pEl");//id ile sectik
+   pEl.classList.add("text-style");
+console.log(pEl.classList);
+
+pEl.classList.remove("red");
+
+        </script>
+</body>
+</html>
